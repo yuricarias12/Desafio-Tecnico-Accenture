@@ -47,6 +47,6 @@ Then('um popup de confirmação deve ser exibido', () => {
 });
 
 Then('o popup deve ser fechado', () => {
-  cy.get('#closeLargeModal').click();
+  cy.get('#closeLargeModal').click({ force: true });;
   cy.get('.modal-content').should('not.exist');
 });
