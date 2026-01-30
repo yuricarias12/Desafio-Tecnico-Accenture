@@ -35,6 +35,31 @@ class SortablePage {
         cy.wrap($el).should("contain.text", ordemEsperada[index]);
       });
   }
+  ordenarElementosCrescente() {
+    const ordemCrescente = ["One", "Two", "Three", "Four", "Five", "Six"];
+
+    ordemCrescente.forEach((texto, index) => {
+      cy.get(".vertical-list-container .list-group-item")
+        .contains(texto)
+        .trigger("mousedown", { which: 1, force: true });
+
+      cy.get(".vertical-list-container .list-group-item")
+        .eq(index)
+        .trigger("mousemove", { force: true })
+        .trigger("mouseup", { force: true });
+    });
+  }
+
+  validarOrdemCrescente() {
+    const ordemEsperada = ["One", "Two", "Three", "Four", "Five", "Six"];
+
+    cy.get(".vertical-list-container .list-group-item")
+      .should("have.length", ordemEsperada.length)
+      .each(($el, index) => {
+        cy.wrap($el).should("contain.text", ordemEsperada[index]);
+      });
+  }
 }
+
 
 export default new SortablePage();
