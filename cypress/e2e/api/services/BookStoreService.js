@@ -1,4 +1,4 @@
-class BookStoreApiPage {
+class BookStoreService {
   criarUsuario() {
     const user = {
       userName: `user_${Date.now()}`,
@@ -108,4 +108,4 @@ class BookStoreApiPage {
   }
 }
 
-export default new BookStoreApiPage();
+export default new BookStoreService();
