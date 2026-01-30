@@ -1,5 +1,5 @@
 import { Given, When, Then, Before } from "cypress-cucumber-preprocessor/steps";
-import WebTablesPage from "../../../page/WebTablesPage";
+import WebTablesPage from "../../../pages/WebTablesPage";
 
 Before(() => {
   WebTablesPage.resetarEstado();

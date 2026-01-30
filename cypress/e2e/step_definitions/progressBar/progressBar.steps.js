@@ -1,5 +1,5 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import ProgressBarPage from "../../../page/ProgressBarPage";
+import ProgressBarPage from "../../../pages/ProgressBarPage";
 
 Given("que acesso o site DemoQA", () => {
   ProgressBarPage.acessarSite();

@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-plugin-api'
 // cypress/support/e2e.js
 
 // Ignora erros que o site DemoQA lança e que não são culpa do seu teste

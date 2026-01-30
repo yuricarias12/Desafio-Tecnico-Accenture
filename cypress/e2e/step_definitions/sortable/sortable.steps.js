@@ -1,5 +1,5 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import SortablePage from "../../../page/SortablePage";
+import SortablePage from "../../../pages/SortablePage";
 
 Given("que acesso o site DemoQA", () => {
   SortablePage.acessarSite();

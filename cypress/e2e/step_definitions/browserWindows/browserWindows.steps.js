@@ -1,5 +1,5 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
-import BrowserWindowsPage from '../../../page/BrowserWindowsPage';
+import BrowserWindowsPage from '../../../pages/BrowserWindowsPage';
 
 Given('que acesso a página inicial do DemoQA', () => {
   BrowserWindowsPage.acessarPaginaInicial();

@@ -6,7 +6,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
     },
-    specPattern: "cypress/e2e/features/**/*.feature",
+    specPattern: "cypress/e2e/**/*.feature",
     excludeSpecPattern: "*.js",
     blockHosts: ["*google-analytics.com", "*googlesyndication.com", "*doubleclick.net", "*adservice.google.com"],
   },

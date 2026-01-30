@@ -1,5 +1,5 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
-import PracticeFormPage from '../../../page/FormPracticePage';
+import PracticeFormPage from '../../../pages/FormPracticePage';
 
 Given('que acesso a página inicial do DemoQA', () => {
   PracticeFormPage.acessarPaginaInicial();
