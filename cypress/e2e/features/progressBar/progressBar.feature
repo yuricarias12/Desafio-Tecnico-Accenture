@@ -10,6 +10,6 @@ Feature: Controle da Progress Bar
     And acesso o submenu "Progress Bar"
     When inicio o progresso da barra
     And interrompo o progresso antes de 25%
+    And retomo o progresso da barra até completar
     Then o valor da progress bar deve ser menor ou igual a 25%
-    When retomo o progresso da barra
-    Then ao atingir 100% a barra deve ser resetada
+    And ao atingir 100% a barra deve ser resetada
